@@ -225,7 +225,7 @@ main {
         max-width: 870px;
     }
 }
-/* 设置了浏览器宽度不大于900px时 */
+/* 设置了浏览器宽度不大于1500px时 */
 @media screen and (min-width: 1500px) {
     .header-float {
         width: 1350px;
@@ -265,7 +265,7 @@ main {
         font-size: 30px;
     }
     .infomation-content {
-        padding:30px ;
+        padding:0px ;
         background: none;
         margin-left: auto;margin-right: auto;
         width: 90%;
