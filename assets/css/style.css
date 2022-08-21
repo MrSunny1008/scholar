@@ -30,8 +30,12 @@
 }
 }
 
-
+/* 魔法代码：一键全站切换深色模式 */
+html.dark-mode {
+    filter: invert(1) hue-rotate(180deg);
+}
 /* 网页默认属性 */
+
 *{
     margin: 0;
     padding: 0;
@@ -39,26 +43,62 @@
     background-color: rgba(255, 255, 255, 0);
 }
 
+.left {
+    float: left;
+}
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: #d4d4d4;
+    }
+    A:link {
+        color: #fff;
+     }
+    A:visited {
+        color: #fff;
+     }   
+    A:active {
+        color: #fff;
+    }
+    
+}
+/* 浅色模式 */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: #55545b;
+    }
+    A:link {
+        color: #55545b;
+     }
+    A:visited {
+        color: #55545b;
+     }   
+    A:active {
+        color: #55545b;
+    }
+    
+}
+
+
 body {
     font-family: "DengXian", sans-serif;
     font-size: 18px;
     font-weight: normal;
-    color: #55545b;
     line-height: 24px;
 }
 
 A:link {
-    color: #55545b;
     text-decoration: none;
     height: auto;
  }
 A:visited {
-    color: #55545b;
     text-decoration: none;
     height: auto;
  }   
 A:active {
-    color: #55545b;
     text-decoration: none;
     height: auto;
 }
@@ -74,16 +114,22 @@ header {
 
 /* 顶栏内部标签属性 */
 .header-card{
-    background-color: white;
-    -webkit-box-shadow: 0px 2px 25px rgb(194, 194, 194);
-    -moz-box-shadow: 0px 2px 25px rgb(194, 194, 194);
-    box-shadow: 0px 2px 25px rgb(194, 194, 194);
     margin:0;border:0;
     position: fixed;
     width: 100%;
-    padding: 0px 18px 0px 19px;
+    padding: 0px 0px 0px 0px;
+    max-height: 75px;
 }
 
+#img-logo {
+    background-repeat: no-repeat;
+    background-position: top left;background-size: 100% auto ;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#Academic-page-padding {
+    line-height: 20px;
+}
 
 @media screen and (max-width: 285px) {
     .header-content {
@@ -91,15 +137,15 @@ header {
         height: 65PX;
     }
     #img-logo {
-        margin-top: 18px;
-        margin-right: 6px;
-        width: 0px;
+        
+        max-width: 0px;
+        max-height: 0px;
     }
     
     #Academic-page-a {
-        height: 172px;
         padding-bottom: 10px;
         vertical-align: bottom;
+        max-height: 75px;
     }
     
     #Academic-page-a span {
@@ -107,6 +153,7 @@ header {
         line-height: 40px;
         margin-bottom: 25px;
         vertical-align:top;
+        margin-left: 10px;
     }
 }
 /* 设置了浏览器宽度不大于285px时  */
@@ -117,13 +164,14 @@ header {
         height: 65PX;
     }
     #img-logo {
-        margin-top: 18px;
+        margin-top: 23px;
         margin-right: 6px;
         height: 30px;
+        width: 128.7px;
     }
     
     #Academic-page-a {
-        height: 172px;
+        max-height: 75px;
         padding-bottom: 10px;
         vertical-align: bottom;
     }
@@ -145,10 +193,11 @@ header {
         margin-top: 18px;
         margin-right: 6px;
         height: 40px;
+        width: 171.61px;
     }
     
     #Academic-page-a {
-        height: 172px;
+        max-height: 75px;
         padding-bottom: 10px;
         vertical-align: bottom;
     }
@@ -161,6 +210,34 @@ header {
     }
 }
 /* 设置了浏览器宽度不小于500px时 */
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+    #img-logo {
+        background-image: url(../img/logo-white_hd.png);
+    }
+    .header-card{
+        color: #fff;
+        background-color: #22272e;
+        -webkit-box-shadow: 0px 2px 25px rgb(40, 40, 40);
+        -moz-box-shadow: 0px 2px 25px rgb(40, 40, 40);
+        box-shadow: 0px 2px 25px rgb(40, 40, 40);
+    }
+}
+/* 浅色模式 */
+@media (prefers-color-scheme: light) {
+    #img-logo {
+        background-image: url(../img/logo_hd.png);
+    }
+    .header-card{
+        background-color: white;
+        -webkit-box-shadow: 0px 2px 25px rgb(194, 194, 194);
+        -moz-box-shadow: 0px 2px 25px rgb(194, 194, 194);
+        box-shadow: 0px 2px 25px rgb(194, 194, 194);
+    }
+}
+
+
 
 /*----------------------------------------*/
 /*  04. 主栏 Main CSS	
@@ -178,17 +255,14 @@ main {
 }
 
 .homepage-card A:link {
-    color: #0163af;
     text-decoration: none;
     height: auto;
  }
  .homepage-card A:visited {
-    color: #0163af;
     text-decoration: none;
     height: auto;
  }   
  .homepage-card A:active {
-    color: #0163af;
     text-decoration: underline;
     height: auto;
 }
@@ -202,6 +276,12 @@ main {
     background: none;
     margin-left: auto;margin-right: auto;
 }
+
+#div-logo {
+    padding-left: 16px;
+}
+
+
 @media screen and (max-width: 900px) {
     .header-float {
         width: 100%;
@@ -291,11 +371,11 @@ main {
 
 
 /* 蓝色标题属性 */
-.title-info{
+/* .title-info{
     color:#2f5785;
-}
+} */
 .title-info hr {
-    background-color: #d6e3f2;
+    /* background-color: #d6e3f2; */
     margin-top: 12px;
 }
 
@@ -306,6 +386,73 @@ main {
 .info-list{
     list-style-type: none;
 }
+.language-change-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: "DengXian", sans-serif;
+}
+#en.translate {
+    height: 30px;
+    font-size: 18px;
+    font-family: "DengXian", sans-serif;
+}
+#zh.translate {
+    height: 30px;
+    font-size: 18px;
+    font-family: "DengXian", sans-serif;
+}
+
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+    .homepage-card A:link {
+        color: #0262ae;
+     }
+     .homepage-card A:visited {
+        color: #0262ae;
+     }   
+     .homepage-card A:active {
+        color: #0078d7;
+    }
+    .title-info{
+        color:#0078d7;
+    }
+    .title-info hr {
+        background-color: #0078d7;
+    }
+    #en.translate {
+        color: #0078d7;
+    }
+    #zh.translate {
+        color: #0078d7;
+    }
+}
+/* 浅色模式 */
+@media (prefers-color-scheme: light) {
+    .homepage-card A:link {
+        color: #0163af;
+     }
+     .homepage-card A:visited {
+        color: #0163af;
+     }   
+     .homepage-card A:active {
+        color: #0163af;
+    }
+    .title-info{
+        color:#2f5785;
+    }
+    .title-info hr {
+        background-color: #d6e3f2;
+    }
+    #en.translate {
+        color: #0163af;
+    }
+    #zh.translate {
+        color: #0163af;
+    }
+    
+}
 
 
 /*----------------------------------------*/
@@ -314,29 +461,125 @@ main {
 /* 底栏标签属性 */
 footer {
     width: 100vw;
-    background-color: #ebebef;
     min-height: 0px;
+    /* background-color: #ebebef; */
 }
 
-.foot-content {
-    /* width: 100%;
-    height: auto; */
-    background-color: #ebebef;
-    /* padding-top: 20px;
-    padding-bottom: 30px; */
-}
+/* .foot-content {
+} */
 
-.foot-content hr {
+/* .foot-content hr {
     background-color:#d5d5dd;
+} */
+
+/* .foot-content p {
+} */
+#a-foot-img {
+    max-width: 130px;
 }
 
-.foot-content p {
-    background-color: #ebebef;
+
+@media screen and (max-width: 500px) {
+    #img-logo-foot {
+        height: 30px;
+        width: 128.7px;
+        margin-top: 30px;
+        background-repeat: no-repeat;
+        background-position: top left;background-size: 100% auto ;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+/* 设置了浏览器宽度不大于500px时  */
+@media screen and (min-width: 500px) {
+    #img-logo-foot {
+        width: 128.7px;
+        height: 30px;
+        margin-top: 0px;
+        background-repeat: no-repeat;
+        background-position: top left;background-size: 100% auto ;
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
+/* 设置了浏览器宽度不小于500px时 */
+#qr-code-foot {
+    width: 100px;
+    height: 100px;
+    margin: 10px 5px;
+    background-repeat: no-repeat;
+        background-position: top left;background-size: 100% auto ;
+        background-color: rgba(0, 0, 0, 0);
 }
 
 #copyright {
-    color: #797979;
+    
     text-align: center;
     margin-top: 10px;
     font-size: 18px;
+}
+.cut-line hr {
+    background-color:#d5d5dd00;
+}
+
+#foot-txt-padding {padding-left: 5px;}
+
+
+
+/* 深色模式 */
+@media (prefers-color-scheme: dark) {
+    #copyright {
+        color: #fff;
+    }
+    .foot-content p {
+        background-color: #22272e;
+        color: #fff;
+    }
+    .footer {
+        background-color: #22272e;
+        color: #fff;
+    }
+    .foot-content {
+        background-color: #22272e;
+        color: #fff;
+    }
+    #img-logo-foot {
+        background-image: url(../img/logo-white_hd.png);
+    }
+    #qr-code-foot {
+        background-image: url(../img/qrcode-dark.png);
+    }
+    footer {
+        background-color: #22272e;
+        color: #fff;
+    }
+    .foot-content hr {
+        background-color:#d5d5dd36;
+    }
+
+}
+/* 浅色模式 */
+@media (prefers-color-scheme: light) {
+    #copyright {
+        color: #797979;
+    }
+    .foot-content p {
+        background-color: #ebebef;
+    }
+    .footer {
+        background-color: #ebebef;
+    }
+    .foot-content {
+        background-color: #ebebef;
+    }
+    #img-logo-foot {
+        background-image: url(../img/logo_hd.png);
+    }
+    #qr-code-foot {
+        background-image: url(../img/qrcode.png);
+    }
+    footer {
+        background-color: #ebebef;
+    }
+    .foot-content hr {
+        background-color:#d5d5dd;
+    }
 }

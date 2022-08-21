@@ -32,7 +32,7 @@ var arrLang = {
       "":"",
       "In-ex-2020-003":"Member of the Class committee of grade senior 1,class 8 - Duty officer - Sep,2020 ~ Jun,2021",
       "In-ex-2020-002":"Member of the Class committee of grade senior 1,class 8 - Monitor - Sep,2020 ~ Jun,2021",
-      "In-ex-2020-001":"Heart-to-heart Volunteer Association of Dongtai - Fellow Student - Jul,2020 ~ Jul,2021",
+      "In-ex-2020-001":"Heart-to-heart Volunteer Association of Dongtai - Fellow Student - Jul,2020 ~ unknown",
       "In-ex-2019-002":"Member of the Class committee of grade juner 3,class 12 - Electrical and Educational Commissioner - Sep.2019 ~ Jul.2020",
       "In-ex-2019-001":"Member of the Class committee of grade juner 3,class 12 - Monitor - Sep.2019 ~ Jul.2020",
       "In-ex-2018-006":"Member of the Student Union of SuDong Bilingual School - Flat department - Minister - Oct.2018 ~ Jun.2020",
@@ -92,6 +92,8 @@ var arrLang = {
       "In-pri-2012-003":"2012.6 - Dongtai NO:1 Primary School - Mightyboy",
       "In-pri-2012-002":"2012.6 - Certificate of Social Arts - hard-pen calligraphy Lv2 Qualified",
       "In-pri-2012-001":"2012.1 - Dongtai NO:1 Primary School - Merit Students",
+
+      "slogan-foot":" / I'm Mr Sunny.",
       "copyright": "Copyright.© 2020-2022 MrSunny.top - All rights reserved",
     },
 
@@ -117,7 +119,7 @@ var arrLang = {
       "Academic-Page-url":"敬请期待",
       "Website":"网站：",
       "Website-url":"https://mrsunny.top",
-      "Email-detail":"邮箱：qiusen1008@foxmail.com",
+      "Email-detail":"电子邮件：qiusen1008@foxmail.com",
 
       "Educational-experience":"教育经历",
       "info-AFSHS":"2020.8 - 2025.6  -  东台市安丰中学",
@@ -130,7 +132,7 @@ var arrLang = {
       "":"",
       "In-ex-2020-003":"校高一年级8班班委会 - 值日班干 - 2020.9 ~ 2021.6",
       "In-ex-2020-002":"校高一年级8班班委会 - 班长 - 2020.9 ~ 2021.6",
-      "In-ex-2020-001":"东台市心连心志愿者协会 - 学生会员 - 2020.7 ~2021.7",
+      "In-ex-2020-001":"东台市心连心志愿者协会 - 学生会员 - 2020.7 ~ ",
       "In-ex-2019-002":"校初三年级12班班委会 - 电教委员 - 2019.9 ~ 2020.7",
       "In-ex-2019-001":"校初三年级12班班委会 - 班长 - 2019.9 ~ 2020.7",
       "In-ex-2018-006":"苏东双语学校学生会 - 生活部 - 生活部部长 - 2018.10 ~ 2020.6",
@@ -191,7 +193,8 @@ var arrLang = {
       "In-pri-2012-002":"2012.6 - 社会艺术水平考级证书硬笔书法二级合格",
       "In-pri-2012-001":"2012.1 - 东台市第一小学三好学生",
 
-      "copyright": "Copyright.© 2020-2022 MrSunny.top - All rights reserved - 版权所有",
+      "slogan-foot":" / 很 / 高 / 兴 / 认 / 识 / 你！",
+      "copyright": "版权所有-Copyright.© 2020-2022 MrSunny.top - All rights reserved ",
     }
   };
   
