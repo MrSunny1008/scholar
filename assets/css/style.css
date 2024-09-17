@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+    CSS 索引目录
+    ===================
+    01. 全局样式 CSS	
+    02. 顶栏 Header CSS
+    04.	主栏 Main   CSS
+    00. 底栏 Footer CSS	
+
+/*备注：
+/*容器尺寸最好设置成图片尺寸，避免layout*/
+/*图片添加data-src属性实现懒加载，减少带宽*/
+-----------------------------------------------------------------------------------*/
+/*----------------------------------------*/
+/*  01. 全局样式 CSS
+/*----------------------------------------*/
+/* 导入字体文件 */
+*{
+    @font-face {
+    font-family: DengXian;
+    src: url(../fonts/Dengl.ttf);
+}
+@font-face {
+    font-family: MSyahei;
+    src: url(../fonts/msyhl.ttc);
+}
+@font-face {
+    font-family: YuanTi;
+    src: url(../fonts/yuanti.ttc);
+}
+}
+
+
+/* 网页默认属性 */
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+body {
+    font-family: "DengXian", sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #55545b;
+    line-height: 24px;
+}
+
+A:link {
+    color: #55545b;
+    text-decoration: none;
+    height: auto;
+ }
+A:visited {
+    color: #55545b;
+    text-decoration: none;
+    height: auto;
+ }   
+A:active {
+    color: #55545b;
+    text-decoration: none;
+    height: auto;
+}
+
+
+/*----------------------------------------*/
+/*  02. 顶栏 Header CSS	
+/*----------------------------------------*/
+/* 顶栏标签属性 */
+header {
+    width: 100%;
+}
+
+/* 顶栏内部标签属性 */
+.header-card{
+    background-color: white;
+    -webkit-box-shadow: 0px 2px 25px rgb(194, 194, 194);
+    -moz-box-shadow: 0px 2px 25px rgb(194, 194, 194);
+    box-shadow: 0px 2px 25px rgb(194, 194, 194);
+    margin:0;border:0;
+    position: fixed;
+    width: 100%;
+    padding: 0px ;
+}
+
+
+@media screen and (max-width: 285px) {
+    .header-content {
+        margin-left: 0px;
+        height: 65PX;
+    }
+    #img-logo {
+        margin-top: 18px;
+        margin-right: 6px;
+        width: 0px;
+    }
+    
+    #Academic-page-a {
+        height: 172px;
+        padding-bottom: 10px;
+        vertical-align: bottom;
+    }
+    
+    #Academic-page-a span {
+        font-size: 22px;
+        line-height: 40px;
+        margin-bottom: 25px;
+        vertical-align:top;
+    }
+}
+/* 设置了浏览器宽度不大于285px时  */
+
+@media screen and (max-width: 500px) {
+    .header-content {
+        margin-left: 0px;
+        height: 65PX;
+    }
+    #img-logo {
+        margin-top: 18px;
+        margin-right: 6px;
+        height: 30px;
+    }
+    
+    #Academic-page-a {
+        height: 172px;
+        padding-bottom: 10px;
+        vertical-align: bottom;
+    }
+    
+    #Academic-page-a span {
+        font-size: 22px;
+        line-height: 40px;
+        margin-bottom: 25px;
+        vertical-align:top;
+    }
+}
+/* 设置了浏览器宽度不大于500px时  */
+@media screen and (min-width: 500px) {
+    .header-content {
+        margin-left: 3%;
+        height: 75PX;
+    }
+    #img-logo {
+        margin-top: 18px;
+        margin-right: 6px;
+        height: 40px;
+    }
+    
+    #Academic-page-a {
+        height: 172px;
+        padding-bottom: 10px;
+        vertical-align: bottom;
+    }
+    
+    #Academic-page-a span {
+        font-size: 28px;
+        line-height: 45px;
+        margin-bottom: 30px;
+        vertical-align:top;
+    }
+}
+/* 设置了浏览器宽度不小于500px时 */
+
+/*----------------------------------------*/
+/*  04. 主栏 Main CSS	
+/*----------------------------------------*/
+/* 主栏属性 */
+main {
+    width: 100%;
+}
+
+/* 资料卡片属性 */
+.homepage-card {
+    width: 100%;
+    padding-top: 100px;
+    min-height: 100px;
+}
+
+.homepage-card A:link {
+    color: #0163af;
+    text-decoration: none;
+    height: auto;
+ }
+ .homepage-card A:visited {
+    color: #0163af;
+    text-decoration: none;
+    height: auto;
+ }   
+ .homepage-card A:active {
+    color: #0163af;
+    text-decoration: underline;
+    height: auto;
+}
+.url-link{
+    width:14px;
+    float: left;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+.infomation-content {
+    background: none;
+    margin-left: auto;margin-right: auto;
+}
+@media screen and (max-width: 900px) {
+    .header-float {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .infomation-content {
+        padding:30px ;
+        width: 90%;
+    }
+}
+
+
+#div-logo {
+    padding-left: 16px;
+}
+
+/* 设置了浏览器宽度不大于900px时  */  
+@media screen and (max-width: 900px) {
+    .header-float {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .infomation-content {
+        padding:30px ;
+        max-width: 870px;
+    }
+}
+/* 设置了浏览器宽度不大于1500px时 */
+@media screen and (min-width: 1500px) {
+    .header-float {
+        width: 1350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .infomation-content {
+        padding:30px ;
+        max-width: 1200px;
+    }
+}
+/* 设置了浏览器宽度不小于1500px时 */
+
+
+
+.infomation-content table {
+    width: 100%;
+}
+.full-width {
+    width: 100%;
+}
+
+/* 照片属性 */
+.photo{
+    width: 90px;
+    
+}
+@media screen and (max-width: 500px) {
+    .photo{
+        width: 75vw;
+        float: none;
+        margin-left: 8vw;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    #QiuSen_name {
+        font-size: 30px;
+    }
+    .infomation-content {
+        padding:0px ;
+        background: none;
+        margin-left: auto;margin-right: auto;
+        width: 90%;
+    }
+}
+/* 设置了浏览器宽度不大于500px时  */
+@media screen and (min-width: 500px) {
+    .photo{
+        width: 90px;
+        float: right;
+    }
+    #QiuSen_name {
+        font-size: 30px;
+    }
+    .infomation-content {
+        padding:30px ;
+        background: none;
+        margin-left: auto;margin-right: auto;
+        width: 90%;
+    }
+}
+/* 设置了浏览器宽度不小于500px时 */
+
+
+/* 蓝色标题属性 */
+.title-info{
+    color:#2f5785;
+}
+.title-info hr {
+    background-color: #d6e3f2;
+    margin-top: 12px;
+}
+
+/* 资料卡文本属性 */
+.form-content{
+    float: left;
+}
+.info-list{
+    list-style-type: none;
+}
+.warning-info-card hr {
+margin-top: 5px;
+}
+.warning-info-card hr {
+    background-color:#d5d5dd;
+}
+.warning-info-content{
+    height: 30px;
+    font-size: 18px;
+    font-family: "DengXian", sans-serif;
+    color: #9f9f9f;
+    padding-top: 3px;
+}
+.language-change-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: "DengXian", sans-serif;
+}
+#en.translate {
+    height: 30px;
+    font-size: 18px;
+    font-family: "DengXian", sans-serif;
+    color: #0163af;
+}
+#zh.translate {
+    height: 30px;
+    font-size: 18px;
+    font-family: "DengXian", sans-serif;
+    color: #0163af;
+}
+
+/*----------------------------------------*/
+/*  00. 底栏 Footer CSS	
+/*----------------------------------------*/
+/* 底栏标签属性 */
+footer {
+    width: 100vw;
+    background-color: #ebebef;
+    min-height: 0px;
+}
+
+.foot-content {
+    /* width: 100%;
+    height: auto; */
+    background-color: #ebebef;
+    /* padding-top: 20px;
+    padding-bottom: 30px; */
+}
+
+.foot-content hr {
+    background-color:#d5d5dd;
+}
+
+.foot-content p {
+    background-color: #ebebef;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    #img-logo-foot {
+        height: 30px;
+        margin-top: 30px;
+    }
+}
+/* 设置了浏览器宽度不大于500px时  */
+@media screen and (min-width: 500px) {
+    #img-logo-foot {
+        height: 30px;
+        margin-top: 0px;
+    }
+}
+/* 设置了浏览器宽度不小于500px时 */
+#qr-code-foot {
+    width: 80px;
+    margin: 10px 5px;
+}
+
+#copyright {
+    color: #797979;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
