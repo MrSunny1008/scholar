@@ -121,7 +121,7 @@ var arrLang = {
 
       "Age":"岁",
       "Gender-Sex":"男",
-      "Native-place":"籍贯：  江苏东台",
+      "Native-place":"籍贯：江苏东台",
       "Nation":"汉族",
       "E-mail":"qiusen1008@foxmail.com",
       "Phone-number":"+86 15851022027",
