@@ -18,7 +18,7 @@ var arrLang = {
       "Contact-details":"Contact details",
       "Phone-number-detail":"Phone number：+86 158 5102 2027",
       "Academic-Page":"Academic Page：",
-      "Academic-Page-url":"Comming Soon...",
+      "Academic-Page-url":"https://qiusen.ac.cn",
       "Website":"Website：",
       "Website-url":"https://mrsunny.top (Chinese Simple Only)",
       "Email-detail":"E-mail：qiusen1008@foxmail.com",
@@ -35,7 +35,7 @@ var arrLang = {
       "":"",
       "":"",
       "In-ex-2024-002":"Member of the of Design Department the Media Convergence Center,Xuhai College - Worker - Sep.2024 ~ unknown",
-      "In-ex-2024-001":"Member of the Propaganda department of the Party Member Workstation of the Department of Literature and Art of Xuhai College - Worker - Sep.2024 ~ unknown",
+      "In-ex-2024-001":"Member of the Propaganda department of the Party Member Workstation of the Department of Literature and Art of Xuhai College - Station Operator(Worker) - Sep.2024 ~ unknown",
       "In-ex-2023-001":"Member of the Class committee of grade senior 3,class 13 - – Electrical and Educational Commissioner - Jul.2023 ~ Jun.2024",
       "In-ex-2022-002":"Member of the Class committee of grade senior 2,class 12 - – information Technology class representative - Sep.2022 ~ Aug.2023",
       "In-ex-2022-001":"Member of the Class committee of grade senior 2,class 12 - – Electrical and Educational Commissioner - Sep.2022 ~ Aug.2023",
@@ -109,7 +109,7 @@ var arrLang = {
       "Renew-time":"* Last update time : 17th,Sep.2024",
 
       "slogan-foot":" / I'm Mr Sunny.",
-      "copyright": "Copyright.© 2020-2022 MrSunny.top - All rights reserved",
+      "copyright": "Copyright.© 2020-2024 MrSunny.top - All rights reserved",
     },
 
 
@@ -132,7 +132,7 @@ var arrLang = {
       "Phone-number-detail":"手机：+86 158 5102 2027",
 
       "Academic-Page":"学术主页：",
-      "Academic-Page-url":"敬请期待",
+      "Academic-Page-url":"https://qiusen.ac.cn",
       "Website":"网站：",
       "Website-url":"https://mrsunny.top",
       "Email-detail":"电子邮件：qiusen1008@foxmail.com",
@@ -150,7 +150,7 @@ var arrLang = {
       "":"",
       "":"",
       "In-ex-2024-002":"学院融媒体中心设计部-干事-2024.9 ~ 至今",
-      "In-ex-2024-001":"校文学与艺术系党员工作站宣传部 -干事-2024.9 ~ 至今",
+      "In-ex-2024-001":"校文学与艺术系党员工作站宣传部 - 站务员-2024.9 ~ 至今",
       "In-ex-2023-001":"校高三年级13班班委会 – 电教委员 - 2023.7 ~ 2024.6",
       "In-ex-2022-002":"校高二年级12班班委会 – 信息科代表 - 2022.9 ~ 2023.8",
       "In-ex-2022-001":"校高二年级12班班委会 – 电教委员 - 2022.9 ~ 2023.8",
@@ -224,7 +224,7 @@ var arrLang = {
       "Renew-time":"* 上一次更新时间：2024年9月17日",
 
       "slogan-foot":" / 很 / 高 / 兴 / 认 / 识 / 你！",
-      "copyright": "版权所有-Copyright.© 2020-2022 MrSunny.top - All rights reserved ",
+      "copyright": "版权所有-Copyright.© 2020-2024 MrSunny.top - All rights reserved ",
     }
   };
   
