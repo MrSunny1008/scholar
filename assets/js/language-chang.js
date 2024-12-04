@@ -117,7 +117,7 @@ var arrLang = {
       "title-index":"邱森 (Sen Qiu) - 学术主页", 
       "Academic-page":"| 学术主页", 
       "Name":"邱森 (Sen Qiu)",
-      "Political-affiliation":"中共团员",
+      "Political-affiliation":"团员",
 
       "Age":"岁",
       "Gender-Sex":"男",
