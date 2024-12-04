@@ -5,7 +5,7 @@ var arrLang = {
       "title-index":"Sen Qiu - Academic Page",
       "Academic-page":"| Academic Page",
       "Name":"Sen Qiu",
-      "Political-affiliation":"The masses",
+      "Political-affiliation":"CCYL",
       "Age":"-year-old",
       "Gender-Sex":"Male",
       "Native-place":"Nation:  China（the People's Republic of China）",
@@ -117,7 +117,7 @@ var arrLang = {
       "title-index":"邱森 (Sen Qiu) - 学术主页", 
       "Academic-page":"| 学术主页", 
       "Name":"邱森 (Sen Qiu)",
-      "Political-affiliation":"群众",
+      "Political-affiliation":"中共团员",
 
       "Age":"岁",
       "Gender-Sex":"男",
